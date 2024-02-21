@@ -6,7 +6,7 @@ const Footer = () => {
         <div className="flex justify-between">
           <div className="flex items-center gap-4">
             <div>
-              <img src="/src/assets/logo.png" height={48} width={50} />
+              <img src="/assets/logo.png" height={48} width={50} />
             </div>
             <div className="text-2xl uppercase font-bold">EM laboratory</div>
           </div>
