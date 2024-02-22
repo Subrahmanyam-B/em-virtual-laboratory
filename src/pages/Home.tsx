@@ -91,7 +91,7 @@ const Home = () => {
         <div className="flex gap-8 justify-center my-10">
           {topicData.map((card, index) => {
             return (
-              <Link to={`/contents/${index + 1}`}>
+              <Link to={`/content/${index + 1}`}>
                 <Button
                   key={index}
                   className=" bg-white shadow-lg p-36 flex flex-col gap-4 h-20 text-black hover:text-white"
