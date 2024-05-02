@@ -31,17 +31,17 @@ const Content = () => {
       <div className="2/3 mx-24">
         <div className="flex gap-10 text-2xl font-semibold items-center">
           <div className="py-8  px-10 text-4xl rounded-lg bg-slate-300">1</div>
-          <div>Introduction</div>
+          <div>List of Topics</div>
         </div>
         <div className="py-12">
           {topic.subTopics?.map((subtopic) => {
             return (
-              <Link to={`/scalars-and-vectors`}>
+              <Link to={subtopic.link}>
                 <div className="flex gap-10 text-xl font-semibold items-center px-24 py-4 hover:bg-slate-200 rounded-lg transistion-all duration-150">
                   <div>
                     <img src="/assets/play.png" />
                   </div>
-                  <div>{subtopic}</div>
+                  <div>{subtopic.name}</div>
                 </div>
               </Link>
             );

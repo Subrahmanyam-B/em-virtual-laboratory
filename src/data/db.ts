@@ -6,9 +6,22 @@ export const topicData = [
     description:
       "Fall in love with geometry by uncovering elegant solutions to beautiful geometric problems.",
     subTopics: [
-      "Scalars ,Vectors and  Unit Vector",
-      "Vector Addition and Vector subtraction",
-      "Vector Multiplication",
+      {
+        name: "Scalars ,Vectors and  Unit Vector",
+        link: "/scalars-and-vectors",
+      },
+      {
+        name: "Vector Addition and Vector subtraction",
+        link: "/vector-addition",
+      },
+      {
+        name: "Vector Multiplication",
+        link: "/vector-multiplication",
+      },
+      {
+        name: "Scalar & Vector Triple Product",
+        link: "/triple-product",
+      },
     ],
   },
   {
@@ -17,7 +30,24 @@ export const topicData = [
     title: "Vector Calculus",
     description:
       "Fall in love with geometry by uncovering elegant solutions to beautiful geometric problems.",
-    subTopics: [],
+    subTopics: [
+      {
+        name: "Differential Length,Area and Volume",
+        link: "/vector-calculus-intro",
+      },
+      {
+        name: "Cylindrical coordinate systems",
+        link: "/cylindrical-coordinates",
+      },
+      {
+        name: "Spherical coordinate systems",
+        link: "/spherical-coordinates",
+      },
+      {
+        name: "Del Operator",
+        link: "/del-operator",
+      },
+    ],
   },
   {
     id: 3,
@@ -25,6 +55,23 @@ export const topicData = [
     title: "Electrostatics",
     description:
       "Fall in love with geometry by uncovering elegant solutions to beautiful geometric problems.",
-    subTopics: [],
+    subTopics: [
+      {
+        name: "Coulomb's Law",
+        link: "/electrostatics-intro",
+      },
+      {
+        name: "Electric Field and Flux Density",
+        link: "/electric-field-and-flux-density",
+      },
+      {
+        name: "Field Operations (Gradient, Divergence, Laplacian, Curl)",
+        link: "/field-operations",
+      },
+      {
+        name: "Electric Potential",
+        link: "/electric-potential",
+      },
+    ],
   },
 ];
