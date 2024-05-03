@@ -6,7 +6,20 @@ const Scalars = () => {
       <div className="text-xl font-black uppercase text-center py-10">
         Scalars And Vectors
       </div>
-
+      <div className="pb-10">
+        <div className="text-xl font-black uppercase text-center py-10">
+          INTERACTIVE DEMO
+        </div>
+        <div className="flex justify-center">
+        <iframe
+      scrolling="no"
+      src="https://www.geogebra.org/material/iframe/id/1827217/width/984/height/593/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto"
+      width="984px"
+      height="593px"
+    >
+    </iframe>
+        </div>
+      </div>
       <div>
         <div className="font-semibold text-lg underline underline-offset-2 mb-6">
           SCALARS
@@ -88,20 +101,7 @@ const Scalars = () => {
           />
         </div>
       </div>
-      <div>
-        <div className="text-xl font-black uppercase text-center py-10">
-          INTERACTIVE DEMO
-        </div>
-        <div className="flex justify-center">
-        <iframe
-      scrolling="no"
-      src="https://www.geogebra.org/material/iframe/id/1827217/width/984/height/593/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto"
-      width="984px"
-      height="593px"
-    >
-    </iframe>
-        </div>
-      </div>
+
       <div className="flex justify-end m-48">
         <Button className="px-6">Next</Button>
       </div>

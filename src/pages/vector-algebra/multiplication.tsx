@@ -6,6 +6,18 @@ const VectorMultiplicationPage = () => {
       <div className="text-xl font-black uppercase text-center py-10">
         Vector Multiplication
       </div>
+      <div className="pb-10">
+        <div className="text-xl font-black uppercase text-center py-10">
+          INTERACTIVE DEMO
+        </div>
+        <div className="flex justify-center">
+        <iframe
+      src="https://www.geogebra.org/classic/hv7u7qcb?embed"
+      width="1800"
+      height="800"
+    ></iframe>
+        </div>
+      </div>
       <div>
         When two vectors A and B are multiplied, the result is either a scalar
         or a vector depending how they are multiplied. Thus there are two types
@@ -447,18 +459,7 @@ const VectorMultiplicationPage = () => {
           The Cross product has the following basic properties
         </div> */}
       </div>
-      <div>
-        <div className="text-xl font-black uppercase text-center py-10">
-          INTERACTIVE DEMO
-        </div>
-        <div className="flex justify-center">
-        <iframe
-      src="https://www.geogebra.org/classic/hv7u7qcb?embed"
-      width="1800"
-      height="800"
-    ></iframe>
-        </div>
-      </div>
+
       <div className="flex justify-end m-48">
         <Button className="px-6">Next</Button>
       </div>

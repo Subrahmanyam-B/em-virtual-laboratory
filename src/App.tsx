@@ -16,6 +16,7 @@ import DelOperatorPage from "./pages/vector-calculus/del-operator";
 import CoulombsLawPage from "./pages/electrostatics/coulombs-law";
 import ElectricFluxPage from "./pages/electrostatics/electric-flux";
 import GradientPage from "./pages/electrostatics/gradient";
+import ElectricPotentialPage from "./pages/electrostatics/electric-potential";
 const App = () => {
   return (
     <BrowserRouter>
@@ -49,7 +50,7 @@ const App = () => {
         <Route path="/electrostatics-intro" element={<CoulombsLawPage/>} />
         <Route path="/electric-field-and-flux-density" element={<ElectricFluxPage/>} />
         <Route path="/field-operations" element={<GradientPage/>} />
-        <Route path="/electric-potential" element={<DelOperatorPage />} />
+        <Route path="/electric-potential" element={<ElectricPotentialPage />} />
       </Routes>
       {location.pathname !== "/scalars-and-vectors" && <Footer />}
     </BrowserRouter>

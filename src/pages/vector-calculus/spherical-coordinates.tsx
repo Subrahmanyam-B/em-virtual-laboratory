@@ -6,7 +6,18 @@ const SphericalCoordinatesPage = () => {
       <div className="text-xl font-black uppercase text-center py-10">
         Spherical coordinate systems
       </div>
-
+      <div className="pb-20">
+        <div className="text-xl font-black uppercase text-center py-10">
+          INTERACTIVE DEMO
+        </div>
+        <div className="flex justify-center">
+        <iframe
+      src="https://www.geogebra.org/classic/bats5scf?embed"
+      width="1000"
+      height="1000"
+    ></iframe>
+        </div>
+      </div>
       <div>
         1. The Differential elements in spherical coordinates can be found as:
       </div>
@@ -36,18 +47,7 @@ const SphericalCoordinatesPage = () => {
 </span>
       </div>
 
-      <div>
-        <div className="text-xl font-black uppercase text-center py-10">
-          INTERACTIVE DEMO
-        </div>
-        <div className="flex justify-center">
-        <iframe
-      src="https://www.geogebra.org/classic/bats5scf?embed"
-      width="1000"
-      height="1000"
-    ></iframe>
-        </div>
-      </div>
+
       <div className="flex justify-end m-48">
         <Button className="px-6">Next</Button>
       </div>

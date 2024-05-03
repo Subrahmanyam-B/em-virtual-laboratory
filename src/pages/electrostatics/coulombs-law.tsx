@@ -4,6 +4,22 @@ const CoulombsLawPage = () => {
   return (
     <div className="px-48 flex flex-col border-t border-slate-300">
       <div>
+      <div className="p-10 flex justify-center items-center">
+      <iframe
+      scrolling="no"
+      src="https://www.geogebra.org/material/iframe/id/154678/width/873/height/500/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto"
+      width="873px"
+      height="500px"
+    ></iframe>
+      </div>
+      <div className="p-10 flex justify-center items-center">
+      <iframe
+      scrolling="no"
+      src="https://www.geogebra.org/classic/NQwe7K89?embed"
+      width="1073px"
+      height="800px"
+    ></iframe>
+      </div>
         <div>
           <span>Coulombs Law:</span>
           <span>
@@ -800,22 +816,7 @@ obtained as
           />
         </svg>
       </div>
-      <div className="p-10 flex justify-center items-center">
-      <iframe
-      scrolling="no"
-      src="https://www.geogebra.org/material/iframe/id/154678/width/873/height/500/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/true/ld/false/sri/true/at/auto"
-      width="873px"
-      height="500px"
-    ></iframe>
-      </div>
-      <div className="p-10 flex justify-center items-center">
-      <iframe
-      scrolling="no"
-      src="https://www.geogebra.org/classic/NQwe7K89?embed"
-      width="1073px"
-      height="800px"
-    ></iframe>
-      </div>
+
       <div className="flex justify-end mb-48">
         <Button className="px-6">Next</Button>
       </div>
