@@ -72,6 +72,14 @@ export const topicData = [
         name: "Electric Potential",
         link: "/electric-potential",
       },
+      {
+        name: "Gauss Law",
+        link: "/gauss-law",
+      },
+      {
+        name: "Electric Dipole",
+        link: "/electric-dipole",
+      },
     ],
   },
 ];

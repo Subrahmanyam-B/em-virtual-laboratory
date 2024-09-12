@@ -17,6 +17,8 @@ import CoulombsLawPage from "./pages/electrostatics/coulombs-law";
 import ElectricFluxPage from "./pages/electrostatics/electric-flux";
 import GradientPage from "./pages/electrostatics/gradient";
 import ElectricPotentialPage from "./pages/electrostatics/electric-potential";
+import GaussLawPage from "./pages/electrostatics/gauss-law";
+import ElectricDipolePage from "./pages/electrostatics/electric-dipole";
 const App = () => {
   return (
     <BrowserRouter>
@@ -27,6 +29,8 @@ const App = () => {
         <Route path="/content/" element={<ContentLayout />}>
           <Route path=":id/" element={<Content />} />
         </Route>
+
+        <Route path="/contributors" element={<Scalars />} />
         <Route path="/scalars-and-vectors" element={<Scalars />} />
         <Route path="/vector-addition" element={<VectorAdditionPage />} />
         <Route
@@ -47,10 +51,15 @@ const App = () => {
           element={<SphericalCoordinatesPage />}
         />
         <Route path="/del-operator" element={<DelOperatorPage />} />
-        <Route path="/electrostatics-intro" element={<CoulombsLawPage/>} />
-        <Route path="/electric-field-and-flux-density" element={<ElectricFluxPage/>} />
-        <Route path="/field-operations" element={<GradientPage/>} />
+        <Route path="/electrostatics-intro" element={<CoulombsLawPage />} />
+        <Route
+          path="/electric-field-and-flux-density"
+          element={<ElectricFluxPage />}
+        />
+        <Route path="/field-operations" element={<GradientPage />} />
         <Route path="/electric-potential" element={<ElectricPotentialPage />} />
+        <Route path="/gauss-law" element={<GaussLawPage />} />
+        <Route path="/electric-dipole" element={<ElectricDipolePage />} />
       </Routes>
       {location.pathname !== "/scalars-and-vectors" && <Footer />}
     </BrowserRouter>
