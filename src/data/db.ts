@@ -82,4 +82,28 @@ export const topicData = [
       },
     ],
   },
+  {
+    id: 4,
+    image: "/assets/maxwell.png",
+    title: "Maxwell Equations",
+    description: "maxwell equations",
+    subTopics: [
+      {
+        name: "Gauss's Law Contd.",
+        link: "/gauss-law-contd",
+      },
+      {
+        name: "Gauss Law for Magnetism",
+        link: "/gauss-law-magnetism",
+      },
+      {
+        name: "Faraday's Law",
+        link: "/faraday-law",
+      },
+      {
+        name: "Ampere's Law",
+        link: "/ampere-law",
+      },
+    ],
+  },
 ];

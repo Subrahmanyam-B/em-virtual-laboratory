@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { BlockMath } from "react-katex";
 
 const FieldOperations = () => {
   return (
@@ -22,17 +23,21 @@ const FieldOperations = () => {
         greatest rate of increase of the scalar field, and its magnitude
         indicates the rate of change in that direction.
       </div>
-
-      <div className="font-bold">
+      <div className="font-bold py-8">
         Gradient of a scalar V can be written as: &nabla; V
       </div>
-
-      <div>
-        1. The Gradient elements in spherical coordinates can be found as:
+      <div>1. Gradient of a Scalar Field in Cartesian plane :</div>
+      <div className="text-2xl">
+        <BlockMath math="\bigtriangledown V = \frac{\partial V}{\partial x}a_{x} + \frac{\partial V}{\partial y}a_{y} + \frac{\partial V}{\partial z}a_{z}" />
       </div>
-      <div>2. The Gradient normal surface area is</div>
-      <div>3. The Gradient Volume is</div>
-
+      <div>2. Gradient of a Scalar Field in cylindrical coordinates :</div>
+      <div className="text-2xl">
+        <BlockMath math="\bigtriangledown V = \frac{\partial V}{\partial\rho}a_{\rho} + \frac{1}{\rho}\frac{\partial V}{\partial\phi}a_{\phi} + \frac{\partial V}{\partial z}a_{z}" />
+      </div>
+      <div>3. Gradient of a Scalar Field in spherical coordinates :</div>
+      <div className="text-2xl">
+        <BlockMath math="\bigtriangledown V = \frac{\partial V}{\partial r}a_{r} + \frac{1}{r}\frac{\partial V}{\partial\Theta}a_{\Theta} + \frac{1}{r\sin\Theta}\frac{\partial V}{\partial\phi}a_{\phi}" />
+      </div>
       <div className="text-lg font-black  py-8">
         Divergence of a Scalar Field
       </div>
@@ -44,58 +49,73 @@ const FieldOperations = () => {
         greatest rate of increase of the scalar field, and its magnitude
         indicates the rate of change in that direction.
       </div>
-
-      <div className="font-bold">
-        Divergence of a scalar V can be written as: &nabla; V
+      <div className="font-bold py-8">
+        Divergence of a scalar V can be written as: &nabla; &middot; A
       </div>
-
-      <div>
-        1. The Differential elements in spherical coordinates can be found as:
+      <div>1. Divergence of a Vector Field in Cartesian plane :</div>
+      <div className="text-2xl">
+        <BlockMath math="\bigtriangledown \cdot A = \frac{\partial A_{x}}{\partial x} + \frac{\partial A_{y}}{\partial y} + \frac{\partial A_{z}}{\partial z}" />
       </div>
-      <div>2. The Differential normal surface area is</div>
-      <div>3. The Differential Volume is</div>
-
+      <div>2. Divergence of a Vector Field in cylindrical coordinates :</div>
+      <div className="text-2xl">
+        <BlockMath math="\bigtriangledown \cdot A = \frac{1}{\rho}\frac{\partial}{\partial\rho}(\rho A_{\rho}) + \frac{1}{\rho}\frac{\partial A_{\phi}}{\partial\phi} + \frac{\partial A_{z}}{\partial z}" />
+      </div>
+      <div>3. Divergence of a Vector Field in spherical coordinates :</div>
+      <div className="text-2xl">
+        <BlockMath math="\bigtriangledown \cdot A = \frac{1}{r^{2}}\frac{\partial}{\partial r}(r^{2}A_{r}) + \frac{1}{r\sin\Theta}\frac{\partial}{\partial\Theta}(A_{\Theta}\sin\Theta) + \frac{1}{r\sin\Theta}\frac{\partial A_{\phi}}{\partial\phi}" />
+      </div>
       <div className="text-lg font-black  py-8">
         Laplacian of a Scalar Field
       </div>
-      <div>
-        • The divergence is an operation applied to a scalar field (a field that
-        assigns a single value to every point in space, such as temperature or
-        electric potential).
-        <br /> • It produces a vector field that points in the direction of the
-        greatest rate of increase of the scalar field, and its magnitude
-        indicates the rate of change in that direction.
+      <div className="font-bold flex items-center">
+        The Laplacian of a scalar field V, written as
+        <BlockMath
+          math="
+\bigtriangledown^{2}
+"
+        />
+        V, is the divergence of the gradient of V.
       </div>
-
-      <div className="font-bold">
-        Laplacian of a scalar V can be written as: &nabla; V
+      <div>1. Laplacian of a Scalar Field in Cartesian plane :</div>
+      <div className="text-2xl">
+        <BlockMath math="\bigtriangledown^{2}V = \frac{\partial^2 V}{\partial x^2} + \frac{\partial^2 V}{\partial y^2} + \frac{\partial^2 V}{\partial z^2}" />
       </div>
-
-      <div>
-        1. The Differential elements in spherical coordinates can be found as:
+      <div>2. Laplacian of a Scalar Field in cylindrical coordinates :</div>
+      <div className="text-2xl">
+        <BlockMath math="\bigtriangledown^{2}V = \frac{1}{\rho}\frac{\partial}{\partial\rho}(\rho\frac{\partial V}{\partial\rho}) + \frac{1}{\rho^{2}}\frac{\partial^2 V}{\partial\phi^2} + \frac{\partial^2 V}{\partial z^2}" />
       </div>
-      <div>2. The Differential normal surface area is</div>
-      <div>3. The Differential Volume is</div>
-
+      <div>3. Laplacian of a Scalar Field in spherical coordinates :</div>
+      <div className="text-2xl">
+        <BlockMath math="\bigtriangledown^{2}V = \frac{1}{r^{2}}\frac{\partial}{\partial r}(r^{2}\frac{\partial V}{\partial r}) + \frac{1}{r^{2}\sin\Theta}\frac{\partial}{\partial\Theta}(\sin\Theta\frac{\partial V}{\partial\Theta}) + \frac{1}{r^{2}\sin^{2}\Theta}\frac{\partial^2V}{\partial\phi^2}" />
+      </div>{" "}
       <div className="text-lg font-black  py-8">Curl of a Scalar Field</div>
       <div>
-        • The divergence is an operation applied to a scalar field (a field that
-        assigns a single value to every point in space, such as temperature or
-        electric potential).
-        <br /> • It produces a vector field that points in the direction of the
-        greatest rate of increase of the scalar field, and its magnitude
-        indicates the rate of change in that direction.
+        The curl of a vector field is a fundamental operation in vector calculus
+        that represents the rotation or angular momentum of the vector field at
+        a given point.
       </div>
-
-      <div className="font-bold">
-        Curl of a scalar V can be written as: &nabla; V
+      <div className="font-bold flex items-center">
+        Curl A = <BlockMath math="\bigtriangledown \times A" />
       </div>
-
-      <div>
-        1. The Differential elements in spherical coordinates can be found as:
+      <div className="pb-8">
+        The definition of curl operator is independent of the coordinate system
+        :
       </div>
-      <div>2. The Differential normal surface area is</div>
-      <div>3. The Differential Volume is</div>
+      <div>In Cartesian Coordinates</div>
+      <div className="text-2xl py-4">
+        <BlockMath math="\bigtriangledown \times A = \begin{vmatrix} a_{x} & a_{y} & a_{z} \\ \frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\ A_{x} & A_{y} & A_{z} \end{vmatrix}" />
+        <BlockMath math="\bigtriangledown \times A = \begin{bmatrix} \frac{\partial A_{z}}{\partial y} - \frac{\partial A_{y}}{\partial z} \\ \end{bmatrix} a_{x} + \begin{bmatrix} \frac{\partial A_{x}}{\partial z} - \frac{\partial A_{z}}{\partial x} \\ \end{bmatrix} a_{y} + \begin{bmatrix} \frac{\partial A_{y}}{\partial x} - \frac{\partial A_{x}}{\partial y} \\ \end{bmatrix} a_{z}" />
+      </div>
+      <div>In Cylindrical Coordinates</div>
+      <div className="text-2xl py-4">
+        <BlockMath math="\bigtriangledown \times A = \frac{1}{\rho} \begin{vmatrix} a_{\rho} & \rho a_{\phi} & a_{z} \\ \frac{\partial}{\partial \rho} & \frac{\partial}{\partial \phi} & \frac{\partial}{\partial z} \\ A_{\rho} & \rho A_{\phi} & A_{z} \end{vmatrix}" />
+        <BlockMath math="\bigtriangledown \times A = \begin{bmatrix} \frac{1}{\rho} \frac{\partial A_{z}}{\partial \phi} - \frac{\partial A_{\phi}}{\partial z} \\ \end{bmatrix} a_{\rho} + \begin{bmatrix} \frac{\partial A_{\rho}}{\partial z} - \frac{\partial A_{z}}{\partial \rho} \\ \end{bmatrix} a_{\phi} + \frac{1}{\rho} \begin{bmatrix} \frac{\partial(\rho A_{\phi})}{\partial \rho} - \frac{\partial A_{\rho}}{\partial \phi} \\ \end{bmatrix} a_{z}" />
+      </div>
+      <div>In Spherical Coordinates</div>
+      <div className="text-2xl py-4">
+        <BlockMath math="\bigtriangledown \times A = \frac{1}{r^{2}\sin\theta} \begin{vmatrix} a_{r} & ra_{\theta} & r\sin\theta a_{\phi} \\ \frac{\partial}{\partial r} & \frac{\partial}{\partial \theta} & \frac{\partial}{\partial \phi} \\ A_{r} & rA_{\theta} & r\sin A_{\phi} \\ \end{vmatrix}" />
+        <BlockMath math="\bigtriangledown \times A = \frac{1}{r \sin \theta} \begin{bmatrix} \frac{\partial(A_{\phi} \sin \theta)}{\partial \theta} - \frac{\partial A_{\theta}}{\partial \phi} \end{bmatrix} a_{r} + \frac{1}{r} \begin{bmatrix} \frac{1}{\sin \theta} \frac{\partial A_{r}}{\partial \phi} - \frac{\partial (r A_{\phi})}{\partial r} \end{bmatrix} a_{\theta} + \frac{1}{r} \begin{bmatrix} \frac{\partial (r A_{\theta})}{\partial r} - \frac{\partial A_{r}}{\partial \theta} \end{bmatrix} a_{\phi}" />
+      </div>{" "}
       <div className="flex justify-end mb-48">
         <Button className="px-6">Next</Button>
       </div>

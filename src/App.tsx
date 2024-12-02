@@ -19,6 +19,11 @@ import GradientPage from "./pages/electrostatics/gradient";
 import ElectricPotentialPage from "./pages/electrostatics/electric-potential";
 import GaussLawPage from "./pages/electrostatics/gauss-law";
 import ElectricDipolePage from "./pages/electrostatics/electric-dipole";
+import GaussLawContdPage from "./pages/maxwell-equations/gauss-law-contd";
+import AmpereLawPage from "./pages/maxwell-equations/amperes-law";
+import FaradayLawPage from "./pages/maxwell-equations/faradays-law";
+import About from "./pages/About";
+import GaussLawMagnestismPage from "./pages/maxwell-equations/gauss-law-magnetism";
 const App = () => {
   return (
     <BrowserRouter>
@@ -59,7 +64,15 @@ const App = () => {
         <Route path="/field-operations" element={<GradientPage />} />
         <Route path="/electric-potential" element={<ElectricPotentialPage />} />
         <Route path="/gauss-law" element={<GaussLawPage />} />
+        <Route path="/gauss-law-contd" element={<GaussLawContdPage />} />
         <Route path="/electric-dipole" element={<ElectricDipolePage />} />
+        <Route path="/ampere-law" element={<AmpereLawPage />} />
+        <Route path="/faraday-law" element={<FaradayLawPage />} />
+        <Route
+          path="/gauss-law-magnetism"
+          element={<GaussLawMagnestismPage />}
+        />
+        <Route path="/about" element={<About />} />
       </Routes>
       {location.pathname !== "/scalars-and-vectors" && <Footer />}
     </BrowserRouter>

@@ -42,6 +42,10 @@ const Home = () => {
       image: "/assets/electrostatics.png",
       title: "Electrostatics",
     },
+    {
+      image: "/assets/maxwell.png",
+      title: "Maxwell Equations",
+    },
   ];
 
   return (
@@ -88,7 +92,7 @@ const Home = () => {
       </div>
       <div className="my-20">
         <h3 className="text-center font-semibold text-4xl">Get Started</h3>
-        <div className="flex gap-8 justify-center my-10">
+        <div className="flex flex-wrap gap-8 justify-center my-10">
           {topicData.map((card, index) => {
             return (
               <Link to={`/content/${index + 1}`}>
